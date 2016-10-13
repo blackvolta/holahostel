@@ -1,0 +1,638 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta charset="UTF-8" />
+            <meta name="description" content="HOLA HOSTELS. The Best Hostels. Your quality hostel network in Europe &amp; Latin america">
+        <title>    HOLA HOSTELS. The Best Hostels. Your quality hostel network in Europe &amp; Latin america</title>
+            <link href='assets/css/homepage.css' rel='stylesheet' type='text/css'>
+        <link rel="icon" type="image/x-icon" href="/favicon.ico" />
+    </head>
+        <body class="home">
+                                            <div class="" id="tab_hola-card" >
+        <span class="icon-cancel close-modal-card" id="close-modal-card"></span>
+        <h2>Mi HOLA Card</h2>
+        <p>Ahora podés loguearte para acceder facilmente a tu Hola Card</p>
+        
+
+<form action="/login_check" method="post">
+    <input type="hidden" name="_csrf_token" value="PbAQd_Ogj1APwYPP0md1tGeweOprDpXyWh5wcyHXZ58" />
+    <div class="modal-body">
+        <div class="input-group">
+            <label>Email</label>
+            <span title="icon-email2" class="icon-email2 icons"></span>
+            <input type="text" id="username" name="_username" value="" required="required" class="form-control required" placeholder="Ingrese su email"/>
+        </div>
+
+        <div class="input-group">
+            <label>Contraseña</label>
+            <span title="icon-email2" class="icon-email2 icons"></span>
+            <input type="password" id="password" name="_password" required="required" class="form-control required" placeholder="Ingrese su contraseña"/>
+        </div>
+
+        <div class="rememberMe">
+            <input type="checkbox" id="remember_me" name="_remember_me" value="1" />
+            <label class="leftTag" for="newsletter">Recordar mi cuenta</label>
+        </div>
+
+        <a href="/register/es" class="nocuenta">¿No tienes cuenta? <span>Crear cuenta</span></a>
+        <a href="/resetting/es/request" class="olvidado">¿Has olvidado tu contraseña?</a>
+
+
+        <div class="clearfix"></div>
+    </div>
+    <div class="modal-footer">
+
+
+        <button id="loginFB" class="botonFB" alt="Ingresar con Facebook" title="Ingresar con Facebook">
+            <span class="icon-facebook2"></span>Ingresar con Facebook
+        </button>
+
+        
+        <button type="button" class="btn btn-default" data-dismiss="modal">Cancelar</button>
+
+        <button type="submit" id="_submit" name="_submit"  class="btn btn--primario" />Ingresar</button>
+
+        <!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8" />
+    </head>
+    <body>
+        <div>
+                        <a href="http://dhh.rodriguezgaston.com.ar/login/facebook">facebook</a> <br />
+            </div>
+    </body>
+</html>
+    </div>
+
+    <script type="text/javascript">
+        var onLoad = function() {
+            $('.botonFB').click(function(e) {
+                e.preventDefault();
+                window.location.href= '/login/facebook';
+            });
+        };
+
+        document.addEventListener('DOMContentLoaded', onLoad, false);
+
+    </script>
+</form>
+
+    </div><!-- tab_card -->
+
+        <div class="navbar navbar-default header-nav">
+    <div class="container">
+
+        <div class="navbar-header logo">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#menu-collapse-1" aria-expanded="false">
+                <span class="icon-dehaze"></span>
+            </button>
+            <a class="navbar-brand" href="/es"><img src="/img/logo-header.png" alt="hola hostels"></a>
+        </div>
+
+        <div class="collapse navbar-collapse" id="menu-collapse-1">
+            <ul class="nav navbar-nav">
+                <li><a href="/es/argentina" class="btn btn--default">Hostels</a></li>
+            </ul>
+            <ul class="nav navbar-nav navbar-right">
+                                    <li><a href="/register/es" class="fr">Registrarse</a></li>
+                                                    <li><a href="" class="fr" data-toggle="modal" data-target="#modal-login">Iniciar sesión</a></li>
+                
+
+
+                <li><a href="" class="fr"><span class="icon-facebook-with-circle"></span></a></li>
+                <li><a href="#" class="fr flag-pt"><span class="icon-twitter-with-circle"></span></a></li>
+                <li><a href="#" class="fr"><span class="icon-instagram"></span></a></li>
+
+                <li><a href="/es" class="fr"><span class="icon-flag_es"></span></a></li>
+                <li><a href="/pt" class="fr flag-pt"><span class="icon-flag_pt"></span></a></li>
+                <li><a href="/en" class="fr"><span class="icon-flag_en"></span></a></li>
+
+            </ul>
+        </div>
+
+    </div>
+</div><!-- header-nav -->
+<div class="sleepGreen">
+    <div class="container">
+        <img src="/img/SleepGreen.png" alt="">
+    </div>
+</div>
+
+<div class="hostels-recomendados" data-toggle="modal" data-target="#modal-recomendados">
+    <img src="/img/sello-registrados.png" alt="">
+</div>
+        <div class="header-lider">
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-12 col-md-6 col-md-offset-3">
+                <h1>¿CUÁL VA A SER TU PRÓXIMO DESTINO?</h1>
+                <form action="/search/es" method="GET">
+                    <div id="autocomplete-search">
+                        <input type="text" id='autocomplete-input' class="typeahead" placeholder="Ingresá Ciudad"
+                               data-url="http://dhh.rodriguezgaston.com.ar/ajax/getDestinations/es" name="search_info">
+                    </div>
+                    <button class="btn btn--secundario">BUSCAR</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+    <!-- header-lider -->
+        <div class="destacados">
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-12 col-md-6 col-md-offset-3">
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="destacado">
+                            <div class="fav fav_place" style="background-image: url('http://cdnqa3.holahostels.com/images/destination/img_8db56b.jpg') "></div>
+                            <h4>DESTINO DE LA SEMANA</h4>
+                            <div class="destindo-destacado">
+                                <a href="/es/hostel/kaixo-hostel-1.html">Buenos Aires</a>
+                                <span>Kaixo Hostel</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="destacado destacado-hostel">
+                            <div class="fav fav_hostel" style="background-image: url('http://cdnqa1.holahostels.com/images/hostels/medium/img_afa4ae.png') "></div>
+                            <h4>HOSTEL DE LA SEMANA</h4>
+                            <div class="destindo-destacado">
+                                <a href="/es/hostel/kaixo-hostel-1.html">Kaixo Hostel</a>
+                                <span>Buenos Aires - Argentina</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div><!-- row -->
+    </div><!-- container -->
+</div><!-- destacados -->
+                <div class="mapa col-xs-12">
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-12">
+                <div id="map-canvas" data-json="http://dhh.rodriguezgaston.com.ar/ajax/getHostels/es"></div>
+<input id="pac-input" class="clearable" type="textbox" placeholder="Ingresar dirección..." >
+
+            </div><!-- /.col-12 -->
+        </div><!-- /.row -->
+    </div><!-- /.container -->
+</div><!-- /.mapa -->
+
+
+
+        <div class="destinos">
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-12 col-md-12">
+                <h2>Explorar destinos</h2>
+                <div class="row">
+                                            <div class="col-md-6">
+                            <div class="destinos-latam">
+                                <a href="/es/latam" class="link-gral">Latino America</a>
+                                                                <div class="link">
+                                    <span class="icon-location_on"></span>
+                                    <a href="/es/quilmes-tucuman">Quilmes - Tucumán</a>
+                                </div>
+                                                                <div class="link">
+                                    <span class="icon-location_on"></span>
+                                    <a href="/es/villa-angostura">Villa Angostura</a>
+                                </div>
+                                                                <div class="link">
+                                    <span class="icon-location_on"></span>
+                                    <a href="/es/amaicha-del-valle">Amaicha del Valle</a>
+                                </div>
+                                                                <div class="link">
+                                    <span class="icon-location_on"></span>
+                                    <a href="/es/bogota">Bogota</a>
+                                </div>
+                                                                <div class="link">
+                                    <span class="icon-location_on"></span>
+                                    <a href="/es/villa-de-leyva">Villa de Leyva</a>
+                                </div>
+                                                                <div class="link">
+                                    <span class="icon-location_on"></span>
+                                    <a href="/es/barranquilla">Barranquilla</a>
+                                </div>
+                                                                <div class="link full">
+                                    <span class="icon-location_on"></span>
+                                    <a href="/es/latam">Y MAS!</a>
+                                </div>
+                            </div>
+                                                            <a href="/es/argentina" class="destino_square" style="background-image: url('http://cdnqa3.holahostels.com/images/destination/img_8db56b.jpg') ">ARGENTINA</a>
+                                                            <a href="/es/uruguay" class="destino_square" style="background-image: url('http://cdnqa3.holahostels.com/images/destination/img_8db56b.jpg') ">URUGUAY</a>
+                                                            <a href="/es/chile" class="destino_square" style="background-image: url('http://cdnqa3.holahostels.com/images/destination/img_8db56b.jpg') ">CHILE</a>
+                                                        <div class="clearfix"></div>
+                        </div>
+                                            <div class="col-md-6">
+                            <div class="destinos-europe">
+                                <a href="/es/europe" class="link-gral">Europa</a>
+                                                                <div class="link">
+                                    <span class="icon-location_on"></span>
+                                    <a href="/es/pamplona">Pamplona</a>
+                                </div>
+                                                                <div class="link">
+                                    <span class="icon-location_on"></span>
+                                    <a href="/es/granada">Granada</a>
+                                </div>
+                                                                <div class="link">
+                                    <span class="icon-location_on"></span>
+                                    <a href="/es/espa%C3%B1a-cordoba">Córdoba</a>
+                                </div>
+                                                                <div class="link">
+                                    <span class="icon-location_on"></span>
+                                    <a href="/es/colonia">Colonia</a>
+                                </div>
+                                                                <div class="link">
+                                    <span class="icon-location_on"></span>
+                                    <a href="/es/bremen">Bremen</a>
+                                </div>
+                                                                <div class="link">
+                                    <span class="icon-location_on"></span>
+                                    <a href="/es/Wurzburg">Wurzburgo</a>
+                                </div>
+                                                                <div class="link full">
+                                    <span class="icon-location_on"></span>
+                                    <a href="/es/europe">Y MAS!</a>
+                                </div>
+                            </div>
+                                                            <a href="/es/espana" class="destino_square" style="background-image: url('http://cdnqa3.holahostels.com/images/destination/img_8db56b.jpg') ">ESPAÑA</a>
+                                                            <a href="/es/alemania" class="destino_square" style="background-image: url('http://cdnqa3.holahostels.com/images/destination/img_8db56b.jpg') ">ALEMANIA</a>
+                                                            <a href="/es/italia" class="destino_square" style="background-image: url('http://cdnqa3.holahostels.com/images/destination/img_8db56b.jpg') ">ITALIA</a>
+                                                        <div class="clearfix"></div>
+                        </div>
+                                    </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+        <div class="hostels">
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-12 col-md-12">
+                <h2>Hostels</h2>
+                <div class="row hostels-latam">
+                    <div class="col-md-9">
+
+                        <div class="image_carousel">
+                            <div id="slider-latam">
+                                    <div class="ficha">
+        <div class="hostel-img">
+            <img src="http://cdnqa1.holahostels.com/images/hostels/medium/img_afa4ae.png" alt="Kaixo Hostel" title="Kaixo Hostel">
+        </div>
+        <div class="hostel-name">Kaixo Hostel</div>
+        <div class="hostel-location">Buenos Aires - Argentina</div>
+        <div class="hostel rank">
+                            <span class="icon-mano"></span>
+                            <span class="icon-mano"></span>
+                            <span class="icon-mano"></span>
+                    </div>
+        <a href="/es/hostel/kaixo-hostel-1.html" class="btn btn--secundario" title="Kaixo Hostel">Visitar</a>
+    </div>
+    <div class="ficha">
+        <div class="hostel-img">
+            <img src="http://cdnqa3.holahostels.com/images/hostels/medium/img-8.jpg" alt="Tango y Bandoneon B&amp;B  San Telmo" title="Tango y Bandoneon B&amp;B  San Telmo">
+        </div>
+        <div class="hostel-name">Tango y Bandoneon B&amp;B  San Telmo</div>
+        <div class="hostel-location">Buenos Aires - Argentina</div>
+        <div class="hostel rank">
+                            <span class="icon-mano"></span>
+                            <span class="icon-mano"></span>
+                    </div>
+        <a href="/es/hostel/tango-y-bandoneon-bb-san-telmo-3.html" class="btn btn--secundario" title="Tango y Bandoneon B&amp;B  San Telmo">Visitar</a>
+    </div>
+    <div class="ficha">
+        <div class="hostel-img">
+            <img src="http://cdnqa2.holahostels.com/images/hostels/medium/img-43.jpg" alt="Arrabal Hostel" title="Arrabal Hostel">
+        </div>
+        <div class="hostel-name">Arrabal Hostel</div>
+        <div class="hostel-location">Buenos Aires - Argentina</div>
+        <div class="hostel rank">
+                            <span class="icon-mano"></span>
+                            <span class="icon-mano"></span>
+                    </div>
+        <a href="/es/hostel/arrabal-hostel-8.html" class="btn btn--secundario" title="Arrabal Hostel">Visitar</a>
+    </div>
+
+                            </div>
+                            <div class="clearfix"></div>
+                            <a class="prev" id="slider-latam_prev" href="#"><span>prev</span></a>
+                            <a class="next" id="slider-latam_next" href="#"><span>next</span></a>
+                            <!-- <div class="pagination" id="slider-latam_pag"></div> -->
+                        </div><!-- image_carousel -->
+
+                    </div>
+                    <div class="col-md-3">
+                            <div class="banner">
+                                    <img src='http://cdnqa1.holahostels.com/images/banner/img_503986.jpg' alt='este banner es nuevogaston' title='este banner es nuevogaston'/>
+            </div>
+
+                    </div>
+                </div> <!-- FIN ROW HOSTELS LATAM -->
+
+                <div class="row hostels-europa">
+                    <div class="col-md-3">
+                            <div class="banner">
+                                    <img src='http://cdnqa2.holahostels.com/images/banner/img_e9abab.jpg' alt='esto es otra prueba' title='esto es otra prueba'/>
+            </div>
+
+                    </div>
+                    <div class="col-md-9">
+
+                        <div class="image_carousel">
+                            <div id="slider-europa">
+                                    <div class="ficha">
+        <div class="hostel-img">
+            <img src="http://cdnqa1.holahostels.com/images/hostels/medium/img-1361.png" alt="Las Musas" title="Las Musas">
+        </div>
+        <div class="hostel-name">Las Musas</div>
+        <div class="hostel-location">Madrid - España</div>
+        <div class="hostel rank">
+                            <span class="icon-mano"></span>
+                            <span class="icon-mano"></span>
+                    </div>
+        <a href="/es/hostel/las-musas-288.html" class="btn btn--secundario" title="Las Musas">Visitar</a>
+    </div>
+    <div class="ficha">
+        <div class="hostel-img">
+            <img src="http://cdnqa3.holahostels.com/images/hostels/medium/img-1364.jpg" alt="Way Hostel" title="Way Hostel">
+        </div>
+        <div class="hostel-name">Way Hostel</div>
+        <div class="hostel-location">Madrid - España</div>
+        <div class="hostel rank">
+                            <span class="icon-mano"></span>
+                            <span class="icon-mano"></span>
+                    </div>
+        <a href="/es/hostel/way-hostel-289.html" class="btn btn--secundario" title="Way Hostel">Visitar</a>
+    </div>
+    <div class="ficha">
+        <div class="hostel-img">
+            <img src="http://cdnqa2.holahostels.com/images/hostels/medium/img-1375.jpg" alt="U Hostel" title="U Hostel">
+        </div>
+        <div class="hostel-name">U Hostel</div>
+        <div class="hostel-location">Madrid - España</div>
+        <div class="hostel rank">
+                            <span class="icon-mano"></span>
+                            <span class="icon-mano"></span>
+                    </div>
+        <a href="/es/hostel/u-hostel-290.html" class="btn btn--secundario" title="U Hostel">Visitar</a>
+    </div>
+
+                            </div>
+                            <div class="clearfix"></div>
+                            <a class="prev" id="slider-europa_prev" href="#"><span>prev</span></a>
+                            <a class="next" id="slider-europa_next" href="#"><span>next</span></a>
+                            <!-- <div class="pagination" id="slider-europa_pag"></div> -->
+                        </div><!-- image_carousel -->
+
+                    </div>
+
+                </div> <!-- FIN ROW HOSTELS EUROPA -->
+
+                <div class="row">
+                    <div class="col-md-12">
+                            <div class="banner-lg">
+                                    <img src='http://cdnqa3.holahostels.com/images/banner/img_597eb2.jpg' alt='es una imagen grande en homepage' title='es una imagen grande en homepage'/>
+            </div>
+
+                    </div>
+                </div><!-- /row -->
+
+            </div>
+        </div>
+    </div>
+</div>
+        <div class="comunidad">
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-12 col-md-12">
+                <h2>Sé parte de Hola Hostels!</h2>
+                <div class="row">
+                    <div class="col-md-3">
+                        <div class="action viaja">
+                            <div class="title">Viajá</div>
+                            <div class="detalle">
+                                <p>Conocé los mejores destinos y hostels seleccionados para vos.</p>
+                                <a href="/destinos/es/">Ver todos los destinos <span class="icon-keyboard_arrow_right"></span></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="action recibi">
+                            <div class="title">Recibí</div>
+                            <div class="detalle">
+                                <p>Sé parte de Hola, escribinos y enterate los requisitos.</p>
+                                <a href="/es/unite.html">Uní tu hostel <span class="icon-keyboard_arrow_right"></span></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="action cuida">
+                            <div class="title">Cuidá</div>
+                            <div class="detalle">
+                                <p>Junto con cada hostel queremos cuidar y proteger nuestro planeta!</p>
+                                <a href="/es/cuida.html">Compromiso ecológico <span class="icon-keyboard_arrow_right"></span></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="action sumate">
+                            <div class="title">Sumate</div>
+                            <span class="icon-plus"></span>
+                            <div class="detalle">
+                                <a href="/es/quienes_somos.html">¿Quiénes somos?</a>
+                            </div>
+                        </div>
+                    </div>
+                </div><!-- /row -->
+            </div><!-- /col-12 -->
+        </div><!-- /row -->
+    </div><!-- /container -->
+</div><!-- /comunidad -->
+        <div class="accesos">
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-12 col-md-4">
+                <div class="lista-accesos">
+                                            <a href="/es/buenos-aires" title="Buenos Aires">Buenos Aires</a>
+                                            <a href="/es/pucon" title="Pucon">Pucon</a>
+                                            <a href="/es/san-pedro-de-atacama" title="San Pedro de Atacama">San Pedro de Atacama</a>
+                                            <a href="/es/lima" title="Lima">Lima</a>
+                                            <a href="/es/montanita" title="Montañita">Montañita</a>
+                                            <a href="/es/bogota" title="Bogota">Bogota</a>
+                                    </div>
+            </div>
+            <div class="col-xs-12 col-md-4">
+                <div class="lista-accesos">
+                                            <a href="/es/madrid" title="Madrid">Madrid</a>
+                                            <a href="/es/barcelona" title="Barcelona">Barcelona</a>
+                                            <a href="/es/sevilla" title="Sevilla">Sevilla</a>
+                                            <a href="/es/granada" title="Granada">Granada</a>
+                                            <a href="/es/Berlin" title="Berlin">Berlin</a>
+                                            <a href="/es/florencia" title="Florencia">Florencia</a>
+                                    </div>
+            </div>
+            <div class="col-xs-12 col-md-4">
+                <div class="lista-accesos">
+                                            <a href="/es/hostel/kaixo-hostel-1.html" title="Kaixo Hostel">Kaixo Hostel</a>
+                                            <a href="/es/hostel/-1-hostel-palermo-2.html" title="+1 Hostel Palermo">+1 Hostel Palermo</a>
+                                            <a href="/es/hostel/tango-y-bandoneon-bb-san-telmo-3.html" title="Tango y Bandoneon B&amp;B  San Telmo">Tango y Bandoneon B&amp;B  San Telmo</a>
+                                            <a href="/es/hostel/arrabal-hostel-8.html" title="Arrabal Hostel">Arrabal Hostel</a>
+                                            <a href="/es/hostel/carlos-gardel-hostel-9.html" title="Carlos Gardel Hostel">Carlos Gardel Hostel</a>
+                                            <a href="/es/hostel/estacion-buenos-aires-hostel-10.html" title="Estación Bs As Hostel">Estación Bs As Hostel</a>
+                                    </div>
+            </div>
+        </div>
+    </div>
+</div><!-- /accesos -->
+        <div class="footer">
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-12 col-md-12">
+                <div class="row">
+                    <div class="col-md-3">
+                        <img src="/img/logo-footer.png" alt="">
+                    </div>
+                    <div class="col-md-9">
+                        <div class="row">
+                            <div class="col-md-3 redes">
+                                <h6>Seguinos en</h6>
+                                <a href="#"><span class="icon-facebook-with-circle"></span></a>
+                                <a href="#"><span class="icon-twitter-with-circle"></span></a>
+                                <a href="#"><span class="icon-blogger"></span></a>
+                            </div>
+                            <div class="col-md-3">
+                                <h6>HOLA en tu idioma</h6>
+                                <a href="/es">Español</a>
+                                <a href="/en">English</a>
+                                <a href="/pt">Portugués</a>
+                            </div>
+                            <div class="col-md-3">
+                                <h6>Asociate con HOLA</h6>
+                                <a href="/register/es">Registrate Gratis</a>
+                                <a href="/es/unite.html">Uní tu hostel a HOLA</a>
+                                <a href="/es/descuentos-para-miembros.html">Descuentos para Miembros</a>
+                                <a href="/es/work-and-travel.html">Work and Travel</a>
+                            </div>
+                            <div class="col-md-3">
+                                <h6>Acerca de HOLA</h6>
+                                <a href="/es/quienes_somos.html">¿Quiénes Somos?</a>
+                                <a href="/es/cuida.html">Compromiso Ecológico</a>
+                                <a href="/es/contacto.html">Contacta con HOLA</a>
+                                <a href="/es/verification.html">Verificación de socios</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div><!-- /footer -->
+        <div class="modal fade" id="modal-recomendados" tabindex="-1" role="dialog">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                <h4 class="modal-title">Hostels Recomendados</h4>
+
+            </div>
+
+            <div class="modal-body">
+                <img src="/img/sello-recomendado.png" alt="">
+                <p>El sello de recomendado certifica la calidad del hostel bajo nuestros estandares, además otorga un 10% de descuento!</p>
+            </div>
+            <div class="clearfix"></div>
+        </div><!-- /.modal-content -->
+    </div><!-- /.modal-dialog -->
+</div><!-- /.modal-recomendados -->
+
+        
+        <div class="modal fade" id="modal-login" tabindex="-1" role="dialog">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                <h4 class="modal-title">Iniciar Sesión</h4>
+
+            </div>
+            
+
+<form action="/login_check" method="post">
+    <input type="hidden" name="_csrf_token" value="PbAQd_Ogj1APwYPP0md1tGeweOprDpXyWh5wcyHXZ58" />
+    <div class="modal-body">
+        <div class="input-group">
+            <label>Email</label>
+            <span title="icon-email2" class="icon-email2 icons"></span>
+            <input type="text" id="username" name="_username" value="" required="required" class="form-control required" placeholder="Ingrese su email"/>
+        </div>
+
+        <div class="input-group">
+            <label>Contraseña</label>
+            <span title="icon-email2" class="icon-email2 icons"></span>
+            <input type="password" id="password" name="_password" required="required" class="form-control required" placeholder="Ingrese su contraseña"/>
+        </div>
+
+        <div class="rememberMe">
+            <input type="checkbox" id="remember_me" name="_remember_me" value="1" />
+            <label class="leftTag" for="newsletter">Recordar mi cuenta</label>
+        </div>
+
+        <a href="/register/es" class="nocuenta">¿No tienes cuenta? <span>Crear cuenta</span></a>
+        <a href="/resetting/es/request" class="olvidado">¿Has olvidado tu contraseña?</a>
+
+
+        <div class="clearfix"></div>
+    </div>
+    <div class="modal-footer">
+
+
+        <button id="loginFB" class="botonFB" alt="Ingresar con Facebook" title="Ingresar con Facebook">
+            <span class="icon-facebook2"></span>Ingresar con Facebook
+        </button>
+
+        
+        <button type="button" class="btn btn-default" data-dismiss="modal">Cancelar</button>
+
+        <button type="submit" id="_submit" name="_submit"  class="btn btn--primario" />Ingresar</button>
+
+        <!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8" />
+    </head>
+    <body>
+        <div>
+                        <a href="http://dhh.rodriguezgaston.com.ar/login/facebook">facebook</a> <br />
+            </div>
+    </body>
+</html>
+    </div>
+
+    <script type="text/javascript">
+        var onLoad = function() {
+            $('.botonFB').click(function(e) {
+                e.preventDefault();
+                window.location.href= '/login/facebook';
+            });
+        };
+
+        document.addEventListener('DOMContentLoaded', onLoad, false);
+
+    </script>
+</form>
+
+        </div><!-- /.modal-content -->
+    </div><!-- /.modal-dialog -->
+</div><!-- /.modal -->
+
+
+                <script src="https://maps.googleapis.com/maps/api/js?v=3.exp&libraries=places"></script>
+        <script type='text/javascript' src='assets/js/homepage.js'></script>
+        </body>
+
+
+</html>
