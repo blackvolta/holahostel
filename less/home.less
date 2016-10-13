@@ -1,0 +1,655 @@
+.home {
+	color: #fff;
+	font-family: 'Montserrat', sans-serif;
+	font-weight: 400;
+	.header-nav .logo .btn--default:hover {
+		color: #5c3f12;
+	}
+	.sleepGreen {
+		img {
+	        position: absolute;
+		    margin-left: 290px;
+		    width: 66px;
+		}
+	}
+	.hostels-recomendados {
+		position: absolute;
+	    right: 50px;
+	    top: 50px;
+	    z-index: 2;
+		img {
+			width: 130px;
+		    &:hover {
+				cursor: pointer;
+		    }
+		}
+	}
+	.header-lider {
+		background-image: url('/img/beach-header.png');
+		background-size: cover;
+		background-attachment: fixed;
+	    height: 550px;
+	    width: 100%;
+	    text-align: center;
+	    z-index: 1;
+	    top: 0;
+	    left: 0;
+		width: 100%;
+		h1 {
+		    margin-top: 140px;
+		    font-size: 26px;
+		}
+		input {
+			appearance: none;
+			border-radius: 3px;
+			background-color: #fff;
+			color:#000;
+			height: 40px;
+		   	width: 98%;
+			border-style: none;
+			padding: 2px 10px;
+			box-shadow: 2px 2px 12px 0px rgba(50, 50, 50, 0.64);
+			&:focus{
+			    outline: none;
+			}
+		}
+		#autocomplete-search {
+			margin-top: 70px;
+			float: left;
+    		width: 99%;
+    		.twitter-typeahead {
+    			width: 100%;
+    			input {
+    				width: 100%;
+    			}
+    			.tt-menu {
+				    background-color: rgba(255,255,255,0.8);
+				    color: #555;
+				    margin-top: 5px;
+				    width: 100%;
+				    text-align: left;
+				    border-radius: 4px;
+				    .tt-suggestion {
+				    	padding: 10px;
+				    	&:hover {
+				    		background-color: #777;
+				    		color: #fff;	
+				    	}
+				    }
+				    .tt-cursor {
+				    	background-color: #777;
+				    	color: #fff;
+				    }
+				}
+    		}
+		}
+		.btn {
+			height: 41px;
+			border-top-left-radius: 0px;
+			border-top-right-radius: 3px;
+		    border-bottom-right-radius: 3px;
+		    border-bottom-left-radius: 0px;
+		    margin-left: -101px;
+		    margin-top: 70px;
+    		float: left;
+		}
+	}
+	#tab_hola-card {
+		background-color: #fff;
+		width: 100%;
+		height: 100%;
+		text-align: center;
+		color: #333;
+		display: none;
+	    position: fixed;
+		z-index: 10;
+	    #close-modal-card {
+		    color: @secundario;
+		    position: absolute;
+		    right: 10px;
+		    top: 10px;
+		    font-size: 20px;
+		} 
+		h2 {
+		    color: #333;
+		    margin-top: 40px;
+		    margin-bottom: 20px;
+		    font-size: 26px;
+		}
+		p {
+			color: #333;
+			padding: 20px;
+		    margin-bottom: -10px;
+		}
+		form {
+			text-align: left;
+			padding: 15px;
+			#usuario, #pass {
+				margin-bottom: 10px;
+			}
+			.close-modal-card, .btn--primario {
+				width: 100%;
+				margin-top: 15px;
+			}
+		}
+		.fb-contain {
+			padding: 15px;
+			.divider {
+				border-top: 1px solid #ccc;
+				margin-bottom: 20px;
+			}
+			#loginFB {
+				background-color: #39579a;
+				color: #fff;
+				border: none;
+				padding: 7px 18px 7px 38px;
+				border-radius: 3px;
+				margin-top: 1px;
+				width: 100%;
+				float: left;
+				position: relative;
+				span {
+					position: absolute;
+					padding: 10px 9px;
+					top: 0;
+					left: 0;
+					border-right: 2px solid #fff;
+					height: 100%;
+				}
+			}			
+		}
+		img {
+			width: 400px;
+		}
+		.img-wrapper {
+			position: relative;
+			background-image: url('/img/hola-card_06.png');
+			background-repeat: no-repeat;
+			background-size: contain;
+			width: 400px;
+			height: 232px;
+			margin: 0 auto;
+		    color: #000;
+		    padding-top: 70px;
+		    padding-left: 184px;
+		    font-size: 13px;
+		    margin-top: 10px;
+		    .mail {
+			    position: absolute;
+			    top: 100px;
+			}
+			.member {
+			    position: absolute;
+			    top: 131px;
+    			left: 220px;
+			}
+			.hostel_name {
+			    top: 162px;
+			    position: absolute;
+			}
+		}
+		.btn--secundario {
+		    margin-top: 10px;
+		    margin-bottom: 30px;
+		}
+	} /*#tab_hola-card*/
+	.destacados {
+		text-align: center;
+		margin-top: -130px;
+		.destacado {
+			background-color: #d6992b;
+			color:#fff;
+			border-top: 4px solid #e1e1e1;
+    		//margin-top: 130px;
+    		padding-bottom: 20px;
+    		height: 214px;
+			position: relative;
+    		&::after{
+		        background: linear-gradient( 45deg, #d6992b 33.333%, transparent 33.333%, transparent 66.667%, #d6992b 66.667% ), 
+		            linear-gradient( -45deg, #d6992b 33.333%, transparent 33.333%, transparent 66.667%, #d6992b 66.667% );
+		        background-position: left-bottom;
+		        background-repeat: repeat-x;
+		        background-size: 20px 40px;
+		        content: " ";
+		        display: block;
+		        position: absolute;
+		        bottom: -14px;
+		        left: 0px;
+		        width: 100%;
+		        height: 20px;
+		      }
+    		.fav {
+    			height: 110px;
+    			width: 110px;
+    			border-radius: 50%;
+    			margin: -55px auto 10px;
+    			border: 4px solid #e1e1e1;
+    		}
+    		.fav_place {
+    			background-image: url('/img/destino_fav_week.png');
+    			background-size: cover;
+    			background-position: center center;
+    		}
+    		.fav_hostel {
+    			background-image: url('/img/hostel_fav_week.png');
+    			background-size: cover;
+    			background-position: center center;
+    		}
+			h4{
+				color:#3e3e3e;
+				padding-bottom: 5px;
+				width: 90%;
+    			margin: 0 auto;
+				border-bottom: 1px solid #3e3e3e; 
+			}
+			.destindo-destacado {
+				a {
+					color: #fff;
+					display: block;
+				    font-size: 24px;
+				    margin-top: 20px;
+    				margin-bottom: 10px;
+    				line-height: 25px;
+    				text-transform: uppercase;
+				}
+				span {
+					color: #3e3e3e;
+					margin-bottom: 10px;
+				}
+			}
+		}
+	}
+	.destinos {
+		color: #575757;
+		text-align: center;
+		h2 {
+			font-size: 30px;
+		    margin-top: 10px;
+		}
+		.destinos-latam {
+			background-image: url('/img/bg_latam.png');
+			border-top: 4px solid @primario;
+			background-size: cover;
+    		background-position: center center;
+			text-align: center;
+			margin-top: 30px;
+			padding-left: 10px;
+			min-height: 261px;
+		}
+		.destinos-europe {
+			background-image: url('/img/bg_europa.png');
+			border-top: 4px solid @primario;
+			background-size: cover;
+    		background-position: center center;
+			text-align: center;
+			margin-top: 30px;
+			padding-left: 10px;
+			min-height: 261px;
+			.link-gral{
+				padding: 34px 0;
+			}
+		}
+		.link-gral {
+			background-color: @primario;
+			height: 110px;
+			width: 110px;
+			border-radius: 50%;
+			margin: -55px auto 10px;
+			border: 4px solid @primario;
+			display: block;
+			font-size: 21px;
+			padding: 23px 0;
+    		text-align: center;
+		}
+		.link{
+			font-size: 21px;
+		    display: inline-block;
+		    padding-right: 10px;
+		    &.full {width: 100%;}
+			.icon-location_on{
+				color: #fff;
+			}
+			a {
+			    display: inline-block;
+			    vertical-align: middle;
+			    text-align: left;
+			    line-height: 36px;
+			}
+		}
+		.destino_square {
+			width: 31%;
+			height: 149px;
+			color:#fff;
+			font-size: 24px;
+			font-weight: 700;
+			text-align: center;
+			float: left;
+			background-size: cover;
+    		background-position: center center;
+			padding-top: 60px;
+			margin: 16px 0;
+			&:nth-child(3) {
+			    margin: 16px 3.5%;
+			}
+			&.destino_peru {
+				background-image: url('/img/destino_peru.png');
+			}
+			&.destino_argentina {
+				background-image: url('/img/destino_argentina.png');
+			}
+			&.destino_chile {
+				background-image: url('/img/destino_chile.png');
+			}
+			&.destino_alemania {
+				background-image: url('/img/destino_alemania.png');
+			}
+			&.destino_austria {
+				background-image: url('/img/destino_austria.png');
+			}
+			&.destino_espania {
+				background-image: url('/img/destino_espania.png');
+			}
+		}
+	}
+	.novedades {
+		text-align: center;
+		color: #565a5c;
+		h2 {
+		    color: #575757;
+		    font-size: 30px;
+		    margin-top: 30px;
+		}
+		.box_novedades {
+			color: #565a5c;
+			background-color: #F8F8F8;
+			padding: 20px;
+			text-align: left;
+			box-shadow: 0 1px 2px 0 rgba(0,0,0,.2);
+			h4 {
+			    font-size: 20px;
+				margin-top: 0;
+				color: @secundario;
+			}
+			p {
+				font-size: 14px;
+			}
+			.news_img {
+				width: 100px;
+				height: 100px;
+				background-size: cover;
+			    margin-right: 10px;
+				float: left;
+			}
+		}
+		.btn-novedades {
+			color: @secundario;
+			text-align: right;
+			margin-top: 4px;
+			display: block;
+			&:hover {
+				text-decoration: underline;
+			}
+		}
+		.wyt_title {
+			background-image: url('/img/wyt_bg1.jpg');
+			font-weight: 700;
+			width: 100%;
+			height: 50px;
+			background-size: cover;
+		    background-position: center center;
+		    color: #fff;
+			border-radius: 4px 4px 0 0;
+			margin-top: 0px;
+		    padding-top: 12px;
+    		font-size: 22px;
+		}
+		.wyt {
+			border: 2px solid #00d362;
+			border-top: none;
+			border-radius: 0 0 4px 4px;
+		    padding: 18px 10px 10px;
+    		margin-top: -10px;
+    		.btn.btn--primario {
+			    display: block;
+			    width: 110px;
+			    margin: 0 auto;
+			    margin-top: 14px;
+			}
+		}
+	}
+	.hostels {
+		text-align: center;
+		h2 {
+			color: #575757;
+			font-size: 30px;
+		    margin-top: 30px;
+		}
+		.banner {
+			background-color: #eee;
+			color:#777;
+			height: 340px;
+			padding-top: 55%;
+		}
+		.banner-sm {
+		    background-color: #eee;
+		    color: #777;
+		    height: 170px;
+		    padding-top: 75px;
+		}
+		.banner-lg {
+			background-color: #eee;
+			color:#777;
+			height: 210px;
+			padding-top: 100px;
+		}
+	} //fin hostels
+	.comunidad {
+		text-align: center;
+		margin-bottom: 20px;
+		h2 {
+			color: #575757;
+			font-size: 30px;
+		    margin-top: 30px;
+		    margin-bottom: 15px;
+		}
+		.action{
+			background-size: cover;
+    		background-position: center center;
+			height: 330px;
+			position: relative;
+			img{
+				height: 100%;
+				width: 100%;
+			}
+			&.viaja {
+				background-image: url('/img/comu_viaja.png');
+			}
+			&.recibi {
+				background-image: url('/img/comu_recibi.png');
+			}
+			&.cuida {
+				background-image: url('/img/comu_cuida.png');
+			}
+			&.sumate {
+				background-image: url('/img/comu_sumate.png');
+				.icon-plus {
+					font-size: 80px;
+					opacity: 0.7;
+					margin-top: 40px;
+					position: absolute;
+					margin-left: -40px;
+				}
+				a {font-size: 20px;}
+			}
+			.title {
+				background-color: @primario;
+				color:#fff;
+				padding: 5px 15px;
+				text-align: center;
+				border-top-left-radius: 0;
+			    border-top-right-radius: 0;
+			    border-bottom-right-radius: 4px;
+			    border-bottom-left-radius: 4px;
+			    font-size: 20px;
+			    width: 85%;
+				margin: 0 auto;
+			}			
+			.detalle {
+				background-color: rgba(54, 54, 54, 0.7);
+				position: absolute;
+			    left: 0;
+			    bottom: 0;
+			    width: 100%;
+			    height: 144px;
+			    padding-top: 30px;
+			    a {
+			    	border-bottom: 1px solid #fff;
+			    	.icon-keyboard_arrow_right {
+					    font-size: 20px;
+					    vertical-align: -4px;
+					}
+			    }
+			}
+		}
+	} //fin comunidad
+	.mapa {
+		margin-top: 30px;
+		#map-canvas {
+		    height: 600px;
+		    margin: 0px;
+		    padding: 0px;
+		    .infoBox {
+				background-color: rgba(71,184,95,.8) !important;
+				color: #fff;
+				padding: 10px;
+				width: 200px !important;
+				border-radius: 2px;			
+		    }
+		}
+		#pac-input {
+		    position: relative;
+		    bottom: 50px;
+		    border-radius: 4px;
+		    border: 1px solid #ccc;
+		    padding: 2px;
+		    width: 90%;
+		    margin: 0 auto;
+		    display: block;
+		}
+	} //mapa
+	.accesos {
+		padding: 0 0 20px 0;
+		.lista-accesos {
+			border-top: 4px solid @primario;
+			padding-top: 20px;
+			a {
+				color: #00d362;
+				display: block;
+				line-height: 30px;
+				text-align: center;
+				&:hover {
+					text-decoration: underline;
+				}
+			}
+		}
+	} //fin accesos
+	/*.footer {
+		background-color: #363636;
+		background-image: url('/img/trama-footer.png');
+		background-repeat: no-repeat;
+		background-position: top left;
+		margin-top: 10px;
+		padding: 30px 0;
+		h6{
+			font-size: 14px;
+			font-weight: 700;
+		}
+		a{
+			font-size: 14px;
+			display: block;
+		}
+		.redes {
+		  a {
+		  	display: inline;
+			span {
+		    	font-size: 30px;
+		    }
+		  }
+		}
+	}*/ 
+}
+
+@media (min-width: 992px) and (max-width: 1199px) {
+  .home {
+	.destacados {
+		.destacado {
+			height: 240px;
+		}
+	}
+  }
+}
+
+@media (max-width: 991px) {
+  .home {
+	.destacados {
+		.destacado-hostel {
+			margin-top: 74px;
+		}
+	}
+    .destinos {
+		.destinos-latam, .destinos-europe {
+			margin-top: 50px;
+		}
+	}
+  }
+}
+
+@media (max-width: 991px) {
+	.home {
+		.novedades {
+			.wyt_title {
+				margin-top: 10px;
+			}
+		}
+	}
+}
+@media (max-width: 948px) {
+	.home .hostels-recomendados img {
+	    width: 90px;
+	}
+}
+@media (max-width: 767px) {
+	.home {
+		.header-lider {
+			input {
+		    	width: 98%;
+			}
+		}
+		.hostels {
+			.hostels-europa {margin-top: 10px;}
+		}
+		.comunidad {
+			.action {
+				margin-top: 10px;
+				.detalle {
+					padding-left: 10px;
+					padding-right: 10px;
+				}
+			}
+		}
+		.accesos {
+			.lista-accesos {
+				margin-bottom: 20px;
+			}
+		}
+		.footer {
+			.col-md-3 {
+			    text-align: center;
+			    margin-bottom: 16px;
+			}
+		}
+	}
+}
+@media (max-width: 433px) {
+	.home .sleepGreen {display: none;}
+}
